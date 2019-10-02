@@ -1,0 +1,36 @@
+// Base
+// -------------------
+// Used for global styles
+// Or to override certain Atom core styles
+// -------------------
+body {
+  font-size: @font-size;
+  color: @text-color;
+  background-color: @app-background-color;
+}
+
+atom-pane {
+  border-right: 1px solid @base-border-color;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.header,
+.list-tree, .tab, .atom-dock-toggle-button-inner{
+  color: rgb(241, 246, 255) !important;
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #0030ff, 0 0 5px #1400ff;
+    }
+
+    to {
+      text-shadow: 0 0 10px #006eff, 0 0 50px #0047ff;
+    }
+  }
+  color: #fff;
+  -webkit-animation: glow 5s ease-in-out infinite alternate;
+  -moz-animation: glow 5s ease-in-out infinite alternate;
+  animation: glow 5s ease-in-out infinite alternate;
+}
