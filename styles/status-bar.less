@@ -1,7 +1,5 @@
-
 // Status Bar
 // -------------------
-
 // Located at the bottom.
 // Displays information about the current editor.
 // Overrides: atom/status-bar
@@ -11,4 +9,30 @@
   color: @text-color;
   border-top: 1px solid @base-border-color;
   background-color: @tree-view-background-color;
+}
+
+.platformio-ide-terminal {
+  &.status-bar {
+    border: none;
+  }
+}
+@-webkit-keyframes glowbox {
+  from {
+    box-shadow: 0 0 5px #0030ff, 0 0 5px #1400ff;
+  }
+
+  to {
+    box-shadow: 0 0 10px #006eff, 0 0 10px #ffffff;
+  }
+}
+
+.status-bar-right {
+  busy-signal {
+    &::before {
+      color: #fff;
+      -webkit-animation: glowbox 1.5s ease-in-out infinite alternate;
+      -moz-animation: glowbox 1.5s ease-in-out infinite alternate;
+      animation: glowbox 1.5s ease-in-out infinite alternate;
+    }
+  }
 }

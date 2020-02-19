@@ -3,6 +3,7 @@
 // Used for global styles
 // Or to override certain Atom core styles
 // -------------------
+
 body {
   font-size: @font-size;
   color: @text-color;
@@ -17,14 +18,18 @@ atom-pane {
   }
 }
 
+.atom-dock-toggle-button-inner,
+.author,
+.github-ChangedFilesCount,
+.github-StatusBarTile,
 .header,
 .list-tree,
-.tab,
-.atom-dock-toggle-button-inner,
+.project-find,
+.setting-description,
+.settings-view,
 .status-bar,
-.github-StatusBarTile,
-.github-ChangedFilesCount,
-.project-find {
+.github-Git-root,
+.tab {
   color: rgb(241, 246, 255) !important;
   @-webkit-keyframes glow {
     from {
@@ -36,7 +41,41 @@ atom-pane {
     }
   }
   color: #fff;
-  -webkit-animation: glow 5s ease-in-out infinite alternate;
-  -moz-animation: glow 5s ease-in-out infinite alternate;
-  animation: glow 5s ease-in-out infinite alternate;
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.scrollbar-corner {
+  opacity: 0;
+}
+
+.btn{
+  cursor:pointer;
+  transition: 0.3s;
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    transition: 0.4s;
+    background: #999999;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    transition: 0.4s;
+    border-radius: 20px;
+    background: linear-gradient(65deg, rgba(0, 9, 219, 0.7) 0%, rgba(0, 18, 255, 0.7) 50%, rgba(0, 9, 219, 0.7) 100%);
+    box-shadow: 0 0 2px 1px hsla(0, 0%, 0%, 0.13);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    transition: 0.4s;
+    background: linear-gradient(65deg, rgba(0, 71, 255, 0.8) 0%, rgba(0, 18, 255,0.8) 50%, rgba(0, 71, 255, 0.8) 100%);
 }

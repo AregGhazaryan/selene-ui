@@ -8,54 +8,50 @@
 }
 
 .tree-view {
-  // color: @text-color;
   background-color: @tree-view-background-color;
-  .list-item{
-    // transition: 0.5s;
-    // transition-timing-function: ease-in;
 
-    &:hover{
+  .list-item {
+    &:hover {
       transition: 0.5s;
       transition-timing-function: ease-out;
-      text-shadow: 0 0 0px #5900ff, 0 0 5px #ffffff;
+      text-shadow: 0 0 0 #5900ff, 0 0 5px #00d9ff;
     }
   }
+
   .list-item.selected {
     color: @text-color-selected;
   }
 }
 
-
+.btn-group-replace-all .btn,
 .current-path,
 .cursor-position a,
-.icon::before,
-.status-bar,
-.msg-status,
-.line-ending-tile,
 .encoding-status a,
-.grammar-status a,
-.project-find .header .options-label,
-.project-find .header .options,
-.project-find .header .btn-group .btn,
-.find-container .input-block-item .syntax--text,
 .find-container .input-block-item .btn-group .btn,
+.find-container .input-block-item .syntax--text,
+.grammar-status a,
+.icon::before,
 .input-block .input-block-item .syntax--text,
-.btn-group-replace-all .btn,
 .line,
+.line-ending-tile,
+.msg-status,
 .open-minimap-quick-settings,
-minimap-quick-settings{
-  color:white !important;
+.project-find .header .btn-group .btn,
+.project-find .header .options,
+.project-find .header .options-label,
+.status-bar,
+minimap-quick-settings {
+  color: white !important;
 }
 
-.status-bar-right .idle::before{
-  background:white;
-
+.status-bar-right .idle::before {
+  background: white;
 }
 
-.linter-status-count{
-  .icon-stop,
+.linter-status-count {
   .icon-alert,
-  .icon-info{
-    color:white;
+  .icon-info,
+  .icon-stop {
+    color: white;
   }
 }
