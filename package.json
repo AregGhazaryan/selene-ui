@@ -1,11 +1,16 @@
 {
   "name": "selene-ui",
   "theme": "ui",
-  "version": "0.0.1",
-  "description": "By the moon",
+  "version": "1.0.0",
+  "description": "🌕 By The Moon",
   "keywords": [
     "ui",
-    "theme"
+    "theme",
+    "selene-ui",
+    "Atom Theme",
+    "selene",
+    "Areg",
+    "Ghazaryan"
   ],
   "repository": "https://github.com/AregGhazaryan/selene-ui",
   "license": "MIT",
