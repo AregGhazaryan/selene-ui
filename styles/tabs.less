@@ -16,7 +16,15 @@
     font-size: @font-size;
     border-right: 1px solid @tab-border-color;
     background-color: @tab-background-color;
+    border-bottom: 0px;
+    transition: 0.4s;
+    transition-timing-function: ease-out;
+
     &.active {
+      transition: 0.4s;
+      transition-timing-function: ease-in;
+      text-shadow: 0 0 0.4rem white;
+      border-bottom:2px solid rgb(171, 212, 255);
       color: @text-color-selected;
       background-color: @tab-background-color-active;
     }

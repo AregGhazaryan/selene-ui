@@ -17,16 +17,19 @@ atom-pane {
     border-right: none;
   }
 }
+.header,
+.settings-view,
+.list-tree{
+  text-shadow: 0 0 10px #006eff, 0 0 20px #0047ff, 0 0 50px #0047ff;
+  color:white;
+}
 
 .atom-dock-toggle-button-inner,
 .author,
 .github-ChangedFilesCount,
 .github-StatusBarTile,
-.header,
-.list-tree,
 .project-find,
 .setting-description,
-.settings-view,
 .status-bar,
 .github-Git-root,
 .tab {
@@ -55,6 +58,18 @@ atom-pane {
   transition: 0.3s;
 }
 
+.btn-primary{
+  transition-timing-function: ease-out;
+  background:rgb(101, 136, 255) !important;
+}
+
+.btn-primary:hover{
+  background:rgb(148, 172, 255) !important;
+  transition: 0.4s;
+  transition-timing-function: ease-in;
+  box-shadow: 0 0 0.7rem rgb(218, 226, 254);
+}
+
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -64,18 +79,29 @@ atom-pane {
 
 ::-webkit-scrollbar-track {
     transition: 0.4s;
-    background: #999999;
+    background: #717171;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb {
     transition: 0.4s;
     border-radius: 20px;
-    background: linear-gradient(65deg, rgba(0, 9, 219, 0.7) 0%, rgba(0, 18, 255, 0.7) 50%, rgba(0, 9, 219, 0.7) 100%);
-    box-shadow: 0 0 2px 1px hsla(0, 0%, 0%, 0.13);
+    background:rgb(158, 180, 255);
 }
 
 ::-webkit-scrollbar-thumb:hover {
     transition: 0.4s;
-    background: linear-gradient(65deg, rgba(0, 71, 255, 0.8) 0%, rgba(0, 18, 255,0.8) 50%, rgba(0, 71, 255, 0.8) 100%);
+    background:rgb(218, 226, 254);
+}
+
+.atom-dock-content-wrapper.left{
+  .tab.sortable.active.right-clicked{
+    border-bottom:none;
+    background-color: inherit;
+    text-align: center;
+  }
+}
+
+.close-icon{
+  cursor:pointer !important;
 }
